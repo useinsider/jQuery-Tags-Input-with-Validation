@@ -1,7 +1,7 @@
 
-	<link rel="stylesheet" type="text/css" href="http://xoxco.com/projects/code/tagsinput/jquery.tagsinput.css" />
+	<link rel="stylesheet" type="text/css" href="jquery.tagsinput.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script type="text/javascript" src="http://xoxco.com/projects/code/tagsinput/jquery.tagsinput.js"></script>
+	<script type="text/javascript" src="jquery.tagsinput.js"></script>
 	<!-- To test using the original jQuery.autocomplete, uncomment the following -->
 	<!--
 	<script type='text/javascript' src='http://xoxco.com/x/tagsinput/jquery-autocomplete/jquery.autocomplete.min.js'></script>
@@ -45,6 +45,18 @@
 				//autocomplete_url:'test/fake_plaintext_endpoint.html' //jquery.autocomplete (not jquery ui)
 				autocomplete_url:'test/fake_json_endpoint.html' // jquery ui autocomplete requires a json endpoint
 			});
+
+			var regex4 = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;// Email address
+			$('#tags_4').tagsInput({
+				width: 'auto',
+				pattern: regex4
+			});
+
+			var regex5 = /^\d*$/;// Number
+			$('#tags_5').tagsInput({
+				width: 'auto',
+				pattern: regex5
+			});
 			
 
 // Uncomment this line to see the callback functions in action
@@ -64,5 +76,11 @@
 			
 			<p><label>Autocomplete:</label>
 			<input id='tags_3' type='text' class='tags'></p>
+
+			<p><label>Email address VALIDATION:</label>
+			<input id='tags_4' type='text' class='tags'></p>
+
+			<p><label>Number VALIDATION:</label>
+			<input id='tags_5' type='text' class='tags'></p>
 			
 		</form>

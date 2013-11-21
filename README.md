@@ -1,3 +1,10 @@
+# Customized by @mrhieu
+Hi,
+I like this plugin a lot but in one of my projects, I need to validate email address for each tags. Now it provides:
+- Validate input tag with a given Regex pattern (for Email address, phone number, etc)
+
+Many thanks to its author. Great job !
+
 # jQuery Tags Input Plugin 
 
 Do you use tags to organize content on your site? 
