@@ -5,6 +5,17 @@ I like this plugin a lot but in one of my projects, I need to validate email add
 
 Many thanks to its author. Great job !
 
+## Easy to use
+It's just a new option "pattern"
+
+	var yourRegex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;// Email address
+	$('#tags').tagsInput({
+		width: 'auto',
+		pattern: yourRegex // default: false
+	});
+
+See more in example.html or [View Demo](http://mrhieu.github.io/jQuery-Tags-Input-with-Validation/demo)
+
 # jQuery Tags Input Plugin 
 
 Do you use tags to organize content on your site? 
