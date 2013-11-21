@@ -1,31 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jquery-tags-input by xoxco</title>
-    
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>Jquery-tags-input by mrhieu</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Jquery-tags-input</h1>
-        <p>Magically convert a simple text input into a cool tag list with this jQuery plugin.</p>
-        <p class="view"><a href="https://github.com/xoxco/jQuery-Tags-Input">View the Project on GitHub <small>xoxco/jQuery-Tags-Input</small></a></p>
-        <ul>
-          <li><a href="https://github.com/xoxco/jQuery-Tags-Input/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/xoxco/jQuery-Tags-Input/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/xoxco/jQuery-Tags-Input">Fork On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>jQuery Tags Input Plugin</h1>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Jquery-tags-input</h1>
+          <h2>Magically convert a simple text input into a cool tag list with this jQuery plugin.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/mrhieu/jQuery-Tags-Input-with-Validation/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/mrhieu/jQuery-Tags-Input-with-Validation/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/mrhieu/jQuery-Tags-Input-with-Validation" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="customized-by-mrhieu" class="anchor" href="#customized-by-mrhieu"><span class="octicon octicon-link"></span></a>Customized by <a href="https://github.com/mrhieu" class="user-mention">@mrhieu</a>
+</h1>
+
+<p>Hi,
+I like this plugin a lot but in one of my projects, I need to validate email address for each tags. Now it provides:</p>
+
+<ul>
+<li>Validate input tag with a given Regex pattern (for Email address, phone number, etc)</li>
+</ul><p>Many thanks to its author. Great job !</p>
+
+<h1>
+<a name="jquery-tags-input-plugin" class="anchor" href="#jquery-tags-input-plugin"><span class="octicon octicon-link"></span></a>jQuery Tags Input Plugin</h1>
 
 <p>Do you use tags to organize content on your site? 
 This plugin will turn your boring tag list into a 
@@ -38,9 +56,12 @@ list of tags!</p>
 
 <p><a href="http://xoxco.com/projects/code/tagsinput/">View Demo</a></p>
 
+<p><a href="http://jsfiddle.net/7aDak/">Test it yourself using this jsFiddle Demo</a></p>
+
 <p>Created by <a href="http://xoxco.com">XOXCO</a></p>
 
-<h2>Instructions</h2>
+<h2>
+<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions</h2>
 
 <p>First, add the Javascript and CSS files to your </p> tag:
 
@@ -65,7 +86,7 @@ a list of tags.</p>
 autocomplete url.</p>
 
 <pre><code>$('#tags').tagsInput({
-  autocomplete_url:'<a href="http://myserver.com/api/autocomplete">http://myserver.com/api/autocomplete</a>'
+  autocomplete_url:'http://myserver.com/api/autocomplete'
 });
 </code></pre>
 
@@ -74,7 +95,7 @@ parameters, you can also send in options to the autocomplete plugin, as
 described here.</p>
 
 <pre><code>$('#tags').tagsInput({    
-  autocomplete_url:'<a href="http://myserver.com/api/autocomplete">http://myserver.com/api/autocomplete</a>',
+  autocomplete_url:'http://myserver.com/api/autocomplete',
   autocomplete:{selectFirst:true,width:'100px',autoFill:true}
 });
 </code></pre>
@@ -116,7 +137,8 @@ as the 'onChange' option.</p>
 delete that tag. If you want to override this, set the 'removeWithBackspace' 
 option to false.</p>
 
-<h2>Options</h2>
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
 
 <pre><code>$(selector).tagsInput({
    'autocomplete_url': url_to_autocomplete_api,
@@ -134,13 +156,15 @@ option to false.</p>
    'placeholderColor' : '#666666'
 });
 </code></pre>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/xoxco">xoxco</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </section>
+
+        <footer>
+          Jquery-tags-input is maintained by <a href="https://github.com/mrhieu">mrhieu</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
